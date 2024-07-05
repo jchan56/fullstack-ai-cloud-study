@@ -1,17 +1,24 @@
 package week1.control;
 
+import java.util.Random;
+
 public class ControlStatement {
     public static void main(String[] args) {
-
-        boolean go = true;
-        int i = 0;
-        while(go) {
-            i++;
-            go = i < 10;
-            System.out.println(i+" ");
-        }
-
+        loopTest();
     }
 
+    private static void loopTest() {
+        int i = 1;
 
+        while (i <= 5) {
+            System.out.print(i + " ");
+            i++;
+        }
+
+        i = 4;
+        while (i >= 1) {
+            System.out.print(i + " ");
+            i--;
+        }
+    }
 }
