@@ -7,7 +7,7 @@ public class ControlStatement {
         int i = 0;
         while(go) {
             i++;
-            go = i < 10 ? true : false;
+            go = i < 10;
             System.out.println(i+" ");
         }
 
