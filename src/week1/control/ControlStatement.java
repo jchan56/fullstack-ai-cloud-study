@@ -5,6 +5,7 @@ import java.util.Random;
 public class ControlStatement {
     public static void main(String[] args) {
         loopTest();
+        getEvents();
     }
 
     private static void loopTest() {
@@ -17,8 +18,20 @@ public class ControlStatement {
 
         i = 4;
         while (i >= 1) {
-            System.out.print(i + " ");
+            System.out.println(i + " ");
             i--;
+        }
+
+
+    }
+    private static void getEvents() {
+        Random rd = new Random();
+        int count = 0;
+
+        while (count < 5) {
+            int num = rd.nextInt(50) * 2;
+            System.out.println(num);
+            count++;
         }
     }
 }
